@@ -2,28 +2,28 @@ import java.util.Objects;
 
 public class Shop {
     private String Name;
-    private Integer Income;
-    private Integer area;
+    private Double Income;
+    private Double area;
 
-    public Shop(String Name, Integer Income, Integer area) {
+    public Shop(String Name, Double Income, Double area) {
         this.Name = Name;
         this.Income = Income;
         this.area = area;
     }
 
-    public Integer getArea() {
+    public Double getArea() {
         return area;
     }
 
-    public void setArea(Integer area) {
+    public void setArea(Double area) {
         this.area = area;
     }
 
-    public Integer getIncome() {
+    public Double getIncome() {
         return Income;
     }
 
-    public void setIncome(Integer income) {
+    public void setIncome(Double income) {
         Income = income;
     }
 
@@ -50,7 +50,7 @@ public class Shop {
     @Override
     public String toString() {
         return "Наименование магазина: " + Name +
-                "; Доход - " + Income + " млн.руб.; " +
+                "; Доход - " + Income + " млн. руб.; " +
                 "площадь - " + area + " м2";
     }
 }
